@@ -1,0 +1,187 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_pageimg"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    tools:context="com.application.page101.PointActivity">
+
+    <ImageView
+        android:id="@+id/imageView_main"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/icon_main" />
+
+    <TextView
+        android:id="@+id/textView_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView_main"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="예약이 완료되었습니다!!!" />
+
+    <LinearLayout
+        android:id="@+id/layout_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_complete"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittext_white"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="성명"
+                android:textColor="#515151"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="현정이"
+                android:textColor="#515151"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="전화번호"
+                android:textColor="#515151"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="01098797770"
+                android:textColor="#515151"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="수령시간"
+                android:textColor="#515151"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12-02-17-45"
+                android:textColor="#515151"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="사용포인트"
+                android:textColor="#515151"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView_used_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0P"
+                android:textColor="#515151"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="가용포인트"
+                android:textColor="#515151"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView_useful_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="70P"
+                android:textColor="#515151"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="총 결제금액"
+                android:textColor="#000000"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/textView_total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7000원"
+                android:textColor="#E29700"
+                android:textSize="17dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_home"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/layout_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_white"
+        android:text="처음으로"
+        android:textColor="#515151"
+        android:textSize="16dp" />
+
+
+</RelativeLayout>
